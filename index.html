@@ -9,19 +9,38 @@
         background-color: rgb(88, 42, 114);
         color: rgb(157, 100, 188);
     }
+	
     #characters {
         text-align: center;
+		width: 45%;
+		height: 200px;
+		overflow: auto;
+		border: 1px solid rgb(32, 9, 45);
+		margin-top: 70px;
+		padding-left: 10px;
     }
+	
+	#container {
+		width: 70%;
+		margin: auto;
+	}
+	
+	#title-header {
+		width: 34%;
+		border: 3px solid rgb(32, 9, 45);
+		padding-left: 7px;
+	}
     </style>
   </head>
   <body bgcolor="white">
-
-    <h1>Official Ephilar Help Site</h1>
+    <div id="container">
+    <h1 id="title-header">Ephilar: Town of Mercenaries</h1>
 
     <p>This is an HTML file used for your game project's Help File.</p>
     <p>Edit this as you see fit.</p>
     <p>If you wish to learn about HTML/CSS, I recommend visiting <a href='https://www.codecademy.com/learn/web'>Codecademy</a> to learn!</p>
-    <table id="characters">
+    <div id="characters">
+	<table>
     <thead>
 
         <tr>
@@ -201,5 +220,7 @@
       </tbody>
 
     </table>
+	</div>
+	</div>
   </body>
 </html>
