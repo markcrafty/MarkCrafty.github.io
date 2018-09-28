@@ -1,84 +1,91 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>Ephilar Tavern</title>
-    <style>
-    body {
-        font-family: sans-serif;
-        background-color: rgb(88, 42, 114);
-        color: rgb(157, 100, 188);
-    }
-	
-	#container {
-		width: 70%;
-		margin: auto;
-	}
-	
-	#info-box {
-		text-align: center;
-		width: 45%;
-		overflow: auto;
-		border: 1px solid rgb(32, 9, 45);
-		margin-top: 70px;
-		margin-left: 2%;
-		background-color: rgb(59, 23, 79);
-		border: 3px solid rgb(32, 9, 45);
-	}
-	
-	#footer {
-		background-color: rgb(59, 23, 79);
-		margin-top: 2%;
-		border: 3px solid rgb(32, 9, 45);
-		padding-left: 10px;
-	}
-	
-	#title-header {
-		background-color: rgb(59, 23, 79);
-		width: 17%;
-		border: 3px solid rgb(32, 9, 45);
-		margin-left: 200px;
-		padding-left: 7px;
-	}
-	#header-img {
-		position: relative;
-		left: 14%;
-	}
-	
-	a:link {
-		color: rgb(157, 100, 188);
-	}
-	
-	a:visited {
-		color: rgb(119, 66, 148);
-	}
-	
-	a:hover, a:active, a:focus { 
-		color: rgb(88, 42, 114);
-	}
-    </style>
-  </head>
-  <body bgcolor="white">
-    <div id="container">
-    <h1 id="title-header">Ephilar Tavern</h1>
-	<img src="https://i.imgur.com/3shICGs.png" id="header-img">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Ephilar Tavern &ndash; Home</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/side-menu.css">
+        <!--<![endif]-->
+</head>
+<body>
 
-	<div id="info-box">
-    <h2>The Legends have arrived in Ephilon!</h2>
-	<h3>Begin your Legend!<br>
-	Gather a Party and Gear Up!<br>
-	Explore many Dungeons!</h3>
-	<p>Ephilar is a game about forming a party of your favorite adventurers!<br>
-	Delve deep into dungeons, gear up, complete missions, and make yourself known!<br>
-	New people are out there exploring too! Find them, and try to recruit them for the Guild!<br>
-	Beware, however, as threats could arise at any time! Many have spoken of something that stirs beneath Eldan as we speak...</p>
-    <p>Edit this as you see fit.</p>
-    <p>If you wish to learn about HTML/CSS, I recommend visiting <a href='https://www.codecademy.com/learn/web'>Codecademy</a> to learn!</p>
-	</div>
 
-	<div id="footer">
-	<p>Not © 2018 MarkCrafty</p>
-	</div>
-	</div>
-  </body>
+
+
+
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">MarkCrafty</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item menu-item-divided pure-menu-selected">
+					<a href="#" class="pure-menu-link">Home</a>
+				</li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Characters</a></li>
+
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link">Maps and Enemies</a>
+                </li>
+
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+				
+				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Download</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Ephilar Tavern</h1>
+            <h2>A whole new world awaits!</h2>
+        </div>
+
+        <div class="content">
+			<div class="pure-g">
+				<div class="pure-u-1-4">
+					<img class="pure-img-responsive" src="https://i.imgur.com/swfQyUW.png" alt="Patch 0.10: Eldan's Fate">
+				</div>
+			</div>
+            <h2 class="content-subhead">Yes</h2>
+            <p>
+                Good meme
+            </p>
+
+            <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <h2 class="content-subhead">MAIK</h2>
+            <p>
+                hi
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/ui.js"></script>
+
+</body>
 </html>
