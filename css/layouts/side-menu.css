@@ -1,6 +1,7 @@
 body {
     color: rgb(157, 100, 188);
 	background-color: rgb(88, 42, 114);
+	text-shadow: 1px 1px 1px #000;
 }
 
 a:link {
@@ -22,6 +23,41 @@ a:hover, a:active, a:focus {
 	margin-top: 10px;
 }
 
+.patch-img {
+	position: relative;
+    width: 200%;
+	border: 3px solid rgb(32, 9, 45);
+	margin-top: 10px;
+}
+
+/*
+Spoiler dropdown
+*/
+
+.spoilerbutton {
+	display: block;
+	margin: 5px 0;
+}
+
+.spoiler {
+	overflow: hidden;
+	background: rgb(59, 23, 79);
+}
+
+.spoiler>div {
+	margin: 5px;
+	overflow: hidden;
+	transition: all 1s ease;
+}
+
+.spoilerbutton[value="Show"]+.spoiler>div {
+	max-height: 0;
+}
+
+.spoilerbutton[value="Hide"]+.spoiler>div {
+	max-height: 90px; /*use a big value here*/
+}
+
 /*
 Add transition to containers so they can push in and out.
 */
@@ -38,6 +74,7 @@ Add transition to containers so they can push in and out.
 /*
 This is the parent `<div>` that contains the menu and the content area.
 */
+
 #layout {
     position: relative;
     left: 0;
@@ -54,6 +91,36 @@ This is the parent `<div>` that contains the menu and the content area.
 /*
 The content `<div>` is where all your content goes.
 */
+
+#discord-link {
+	float: right;
+	margin: 10px;
+	margin-right: 20px;
+	background-color: rgb(59, 23, 79);
+	width: 20%;
+	color: rgb(216, 169, 210);
+	border: 3px solid rgb(32, 9, 45);
+	text-align: center;
+}
+
+#footer {
+	background-color: rgb(59, 23, 79);
+	border: 3px solid rgb(32, 9, 45);
+	padding: 6px;
+	clear: both;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.grow {
+	transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+	transform: scale(1.1);
+	margin-left: 4px;
+}
+
 .content {
     margin: 0 auto;
     padding: 0 2em;
@@ -169,6 +236,7 @@ appears on the left side of the page.
         font-size: 120%;
         color: rgb(216, 169, 210);
         margin: 0;
+		border-bottom: 2px solid rgb(32, 9, 45);
     }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
