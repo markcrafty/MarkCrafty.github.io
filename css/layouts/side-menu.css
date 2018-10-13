@@ -30,6 +30,19 @@ a:hover, a:active, a:focus {
 	margin-top: 10px;
 }
 
+.character-profile-img {
+	float: left;
+	border: 3px ridge rgb(32, 9, 45);
+	margin-right: 0px;
+}
+
+.character-graph-img {
+	float: right;
+	border: 3px ridge rgb(32, 9, 45);
+	margin-right: 350px;
+	margin-left: 6px;
+}
+
 /*
 Spoiler dropdown
 */
@@ -37,6 +50,9 @@ Spoiler dropdown
 .spoilerbutton {
 	display: block;
 	margin: 5px 0;
+	background: rgb(59, 23, 79);
+	border: 3px solid rgb(32, 9, 45);
+	/*border-color: rgb(59, 23, 79);*/
 }
 
 .spoiler {
@@ -50,12 +66,24 @@ Spoiler dropdown
 	transition: all 1s ease;
 }
 
-.spoilerbutton[value="Show"]+.spoiler>div {
+.spoilerbutton[value="Show More"]+.spoiler>div {
 	max-height: 0;
 }
 
-.spoilerbutton[value="Hide"]+.spoiler>div {
-	max-height: 90px; /*use a big value here*/
+.spoilerbutton[value="Show Less"]+.spoiler>div {
+	max-height: auto; /*use a big value here*/
+}
+
+/*
+Characters
+*/
+
+#characters {
+	text-align: center;
+	width: 50%;
+	border: 1px solid rgb(32, 9, 45);
+	margin-top: 70px;
+	padding-left: 10px;
 }
 
 /*
@@ -119,6 +147,11 @@ The content `<div>` is where all your content goes.
 .grow:hover {
 	transform: scale(1.1);
 	margin-left: 4px;
+}
+
+.stats-text {
+	line-height: 19px;
+	text-align: right;
 }
 
 .content {
