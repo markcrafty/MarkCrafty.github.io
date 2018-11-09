@@ -35,6 +35,14 @@ a:hover, a:active, a:focus {
 	margin-right: 0px;
 }
 
+.transformation-character-image {
+	float: left;
+	border: 3px ridge rgb(32, 9, 45);
+	margin-right: 100%;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
 .character-graph-img {
 	float: right;
 	border: 3px ridge rgb(32, 9, 45);
@@ -46,12 +54,56 @@ a:hover, a:active, a:focus {
 Spoiler dropdown
 */
 
-.spoilerbutton {
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgb(88, 42, 114)/*rgb(59, 23, 79)*/;
+    color: rgb(216, 169, 210);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 1.7em;
+    font-weight: 500;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: rgb(119, 66, 148);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: rgb(59, 23, 79);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+/* plus and minus */
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 15px;
+    color: rgb(157, 100, 188);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* .spoilerbutton {
 	display: block;
 	margin: 5px 0;
 	background: rgb(59, 23, 79);
 	border: 3px solid rgb(32, 9, 45);
-	/*border-color: rgb(59, 23, 79);*/
+	border-color: rgb(59, 23, 79);
 }
 
 .spoiler {
@@ -70,8 +122,9 @@ Spoiler dropdown
 }
 
 .spoilerbutton[value="Show Less"]+.spoiler>div {
-	max-height: auto; /*use a big value here*/
+	max-height: auto;
 }
+*/
 
 /*
 Characters
@@ -203,7 +256,7 @@ appears on the left side of the page.
 
 #menu {
     margin-left: -150px; /* "#menu" width  #191818*/
-    width: 194px;
+    width: 170px;
     position: fixed;
     top: 0;
     left: 0;
@@ -218,7 +271,7 @@ appears on the left side of the page.
     All anchors inside the menu should be styled like this.
     */
     #menu a {
-        color: #999;
+        color: rgb(216, 169, 210);
         border: none;
         padding: 0.6em 0 0.6em 0.6em;
     }
