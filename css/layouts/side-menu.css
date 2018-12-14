@@ -1,15 +1,15 @@
 body {
-    color: rgb(157, 100, 188);
-	background-color: rgb(88, 42, 114);
+    color: rgb(75, 179, 59);
+	background-color: rgb(49, 139, 35);
 	text-shadow: 1px 1px 1px #000;
 }
 
 a:link {
-	color: rgb(157, 100, 188);
+	color: rgb(75, 179, 59);
 }
 
 a:visited {
-	color: rgb(216, 169, 210);
+	color: rgb(108, 217, 91);
 }
 
 a:hover, a:active, a:focus { 
@@ -19,25 +19,25 @@ a:hover, a:active, a:focus {
 .pure-img-responsive {
 	position: relative;
     width: 400%;
-	border: 3px solid rgb(32, 9, 45);
+	border: 3px solid rgb(11, 48, 3);
 	margin-top: 10px;
 }
 
 .patch-img {
 	position: relative;
     width: 400%;
-	border: 3px solid rgb(32, 9, 45);
+	border: 3px solid rgb(11, 48, 3);
 }
 
 .character-profile-img {
 	float: left;
-	border: 3px ridge rgb(32, 9, 45);
+	border: 3px ridge rgb(11, 48, 3);
 	margin-right: 0px;
 }
 
 .transformation-character-image {
 	float: left;
-	border: 3px ridge rgb(32, 9, 45);
+	border: 3px ridge rgb(11, 48, 3);
 	margin-right: 100%;
 	margin-top: 6px;
 	margin-bottom: 6px;
@@ -45,7 +45,7 @@ a:hover, a:active, a:focus {
 
 .character-graph-img {
 	float: right;
-	border: 3px ridge rgb(32, 9, 45);
+	border: 3px ridge rgb(11, 48, 3);
 	margin-right: 44%;
 	margin-left: 6px;
 }
@@ -56,8 +56,8 @@ Spoiler dropdown
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: rgb(88, 42, 114)/*rgb(59, 23, 79)*/;
-    color: rgb(216, 169, 210);
+    background-color: rgb(49, 139, 35)/*rgb(59, 23, 79)*/;
+    color: rgb(108, 217, 91);
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -78,7 +78,7 @@ Spoiler dropdown
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
-    background-color: rgb(59, 23, 79);
+    background-color: rgb(22, 88, 12);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
@@ -89,7 +89,7 @@ Spoiler dropdown
 .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 15px;
-    color: rgb(157, 100, 188);
+    color: rgb(75, 179, 59);
     float: right;
     margin-left: 5px;
 }
@@ -133,7 +133,7 @@ Characters
 #characters {
 	text-align: center;
 	width: 50%;
-	border: 1px solid rgb(32, 9, 45);
+	border: 1px solid rgb(11, 48, 3);
 	margin-top: 70px;
 	padding-left: 10px;
 }
@@ -176,16 +176,16 @@ The content `<div>` is where all your content goes.
 	float: right;
 	margin: 10px;
 	margin-right: 20px;
-	background-color: rgb(59, 23, 79);
+	background-color: rgb(22, 88, 12);
 	width: 20%;
-	color: rgb(216, 169, 210);
-	border: 3px solid rgb(32, 9, 45);
+	color: rgb(108, 217, 91);
+	border: 3px solid rgb(11, 48, 3);
 	text-align: center;
 }
 
 #footer {
-	background-color: rgb(59, 23, 79);
-	border: 3px solid rgb(32, 9, 45);
+	background-color: rgb(22, 88, 12);
+	border: 3px solid rgb(11, 48, 3);
 	padding: 6px;
 	clear: both;
 	width: 50%;
@@ -212,8 +212,8 @@ The content `<div>` is where all your content goes.
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
-	background-color: rgb(59, 23, 79);
-	border: 3px solid rgb(32, 9, 45);
+	background-color: rgb(22, 88, 12);
+	border: 3px solid rgb(11, 48, 3);
 	margin-top: 10px;
 }
 
@@ -222,21 +222,21 @@ The content `<div>` is where all your content goes.
 	color: #333;
 	text-align: center;
 	padding: 2.5em 2em 0;
-	border-bottom: 3px solid rgb(32, 9, 45);
+	border-bottom: 3px solid rgb(11, 48, 3);
  }
     .header h1 { /** 0.2em 0 **/
         margin: 0 auto;
         font-size: 3em;
         font-weight: 500;
-		background-color: rgb(59, 23, 79);
+		background-color: rgb(22, 88, 12);
 		width: 50%;
-		color: rgb(216, 169, 210);
-		border: 3px solid rgb(32, 9, 45);
+		color: rgb(108, 217, 91);
+		border: 3px solid rgb(11, 48, 3);
 		max-width: 400px;
     }
      .header h2 {
         font-weight: 300;
-        color: rgb(157, 100, 188);
+        color: rgb(75, 179, 59);
         padding: 1px;
         margin-top: 10px;
     }
@@ -244,7 +244,7 @@ The content `<div>` is where all your content goes.
 .content-subhead {
     margin: 50px 0 20px 0;
     font-weight: 350;
-    color: rgb(216, 169, 210);
+    color: rgb(108, 217, 91);
 }
 
 
@@ -262,8 +262,8 @@ appears on the left side of the page.
     left: 0;
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */
-    background: rgb(59, 23, 79);
-	border: 3px solid rgb(32, 9, 45);
+    background: rgb(22, 88, 12);
+	border: 3px solid rgb(11, 48, 3);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -271,7 +271,7 @@ appears on the left side of the page.
     All anchors inside the menu should be styled like this.
     */
     #menu a {
-        color: rgb(216, 169, 210);
+        color: rgb(108, 217, 91);
         border: none;
         padding: 0.6em 0 0.6em 0.6em;
     }
@@ -290,14 +290,14 @@ appears on the left side of the page.
     */
     #menu .pure-menu ul,
     #menu .pure-menu .menu-item-divided {
-        border-top: 1px solid rgb(32, 9, 45);
+        border-top: 1px solid rgb(11, 48, 3);
     }
         /*
         Change color of the anchor links on hover/focus.
         */
         #menu .pure-menu li a:hover,
         #menu .pure-menu li a:focus {
-            background: rgb(119, 66, 148);
+            background: rgb(49, 139, 35);
         }
 
     /*
@@ -305,13 +305,13 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: rgb(119, 66, 148);
+        background: rgb(22, 88, 12);
     }
         /*
         This styles a link within a selected menu item `<li>`.
         */
         #menu .pure-menu-selected a {
-            color: rgb(216, 169, 210);
+            color: rgb(108, 217, 91);
         }
 
     /*
@@ -319,9 +319,9 @@ appears on the left side of the page.
     */
     #menu .pure-menu-heading {
         font-size: 120%;
-        color: rgb(216, 169, 210);
+        color: rgb(108, 217, 91);
         margin: 0;
-		border-bottom: 2px solid rgb(32, 9, 45);
+		border-bottom: 2px solid rgb(11, 48, 3);
     }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
@@ -341,7 +341,7 @@ small screens.
     top: 0;
     left: 0; /* "#menu width" */
     background: #000;
-    background: rgb(59, 23, 79);
+    background: rgb(22, 88, 12);
     font-size: 10px; /* change this value to increase/decrease button size */
     z-index: 1001;
     width: 2em;
@@ -351,7 +351,7 @@ small screens.
 
     .menu-link:hover,
     .menu-link:focus {
-        background: rgb(119, 66, 148);
+        background: rgb(22, 88, 12);
     }
 
     .menu-link span {
